@@ -1,0 +1,16 @@
+<app-cabecalho [titulo]="titulo"></app-cabecalho>
+
+<ion-content [fullscreen]="true">
+  <ion-button id="open-toast" expand="block">
+    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+    <!-- <p id="message">This toast example uses triggers to automatically open a toast when the button is clicked.</p> -->
+    <ion-toast 
+      class="custom-toast"
+      trigger="open-toast" 
+      message="Mensagem toast vai ser fechada após 3 segundos" 
+      [duration]="3000"
+      icon="chatbubbles-outline"
+      [buttons]="toastBotoens"
+    ></ion-toast>
+  </ion-button>
+</ion-content>

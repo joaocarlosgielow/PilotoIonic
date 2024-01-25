@@ -37,6 +37,11 @@ export class AppComponent {
       nome: "Inputs",
       link: "/inputs"
     },
+    {
+      icone: "chatbox-ellipses-outline",
+      nome: "Toast",
+      link: "/toast"
+    },
   ];
   constructor() {
     
