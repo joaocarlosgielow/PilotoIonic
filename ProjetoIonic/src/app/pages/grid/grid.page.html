@@ -1,0 +1,19 @@
+<app-cabecalho [titulo]="titulo"></app-cabecalho>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>Primeiro</ion-col>
+      <ion-col>Segundo</ion-col>
+      <ion-col>Terceiro</ion-col>
+      <ion-col>Quarto</ion-col>
+    </ion-row> 
+      
+    <ion-row *ngFor="let linha of linhas">
+      <ion-col *ngFor="let coluna of colunas">
+        {{linha}} {{coluna}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,35 @@
+<app-cabecalho [titulo]="titulo"></app-cabecalho>
+
+<ion-content [fullscreen]="true">
+
+  <div class="divisor"></div>
+
+  <p class="titulo"> Infome os dados!</p>
+
+  <ion-list>
+    <ion-item>
+      <ion-input label="Descrição" labelPlacement="floating" placeholder="Informe a descrição..."></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Numero" labelPlacement="floating"  type="number" placeholder="000"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Senha" labelPlacement="floating"  type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="E-mail" labelPlacement="floating"  type="email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Telefone" labelPlacement="floating"  type="tel" placeholder="(49) 9 9999-9999" maxlength="11"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Campo Livre..." labelPlacement="floating"></ion-input>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

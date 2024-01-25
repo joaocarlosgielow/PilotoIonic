@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-clientes',
@@ -18,14 +19,39 @@ export class ClientesPage implements OnInit {
       icone: "archive-outline",
       nome: "Produtos",
       link: "/produtos"
-    }
+    },
+    {
+      icone: "grid-outline",
+      nome: "Grid",
+      link: "/grid"
+    },
+    {
+      icone: "calendar-outline",
+      nome: "Datas",
+      link: "/data"
+    },
+    {
+      icone: "list-outline",
+      nome: "Cards",
+      link: "/cards"
+    },
+    {
+      icone: "create-outline",
+      nome: "Inputs",
+      link: "/inputs"
+    },
   ];
 
-  constructor() { }
+  constructor(private menu: MenuController) { 
+
+  }
 
   ngOnInit(): void {
   }
 
+  abreMenu() {
+    this.menu.toggle();
+  }
 }
 
 

@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'data',
     loadChildren: () => import('./pages/data/data.module').then( m => m.DataPageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
 ];
 
 @NgModule({
