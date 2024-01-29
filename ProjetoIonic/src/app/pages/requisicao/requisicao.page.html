@@ -1,0 +1,18 @@
+<app-cabecalho [titulo]="titulo"></app-cabecalho>
+
+<ion-content [fullscreen]="true" color="light">
+  <ion-button color="tertiary" style="width: 96%; margin-left: 2%;" (click)="clickRequisicao()">
+    <ion-icon name="receipt-outline" style="margin-right: 6px;"></ion-icon>
+    Pegar dados...
+  </ion-button>
+
+  <ion-list lines="full" [inset]="true">
+    <ion-item *ngFor="let item of itens">
+      <div class="divIcone">
+        <ion-icon class="icone" name="person-outline"></ion-icon>
+      </div>
+      <h1>{{item.id}}</h1>
+      <p>{{item.titulo}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

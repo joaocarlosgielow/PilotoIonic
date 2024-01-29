@@ -42,6 +42,11 @@ export class AppComponent {
       nome: "Toast",
       link: "/toast"
     },
+    {
+      icone: "git-branch-outline",
+      nome: "Requisição",
+      link: "/requisicao"
+    }
   ];
   constructor() {
     
